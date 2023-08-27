@@ -1,3 +1,5 @@
+![Nuget](https://img.shields.io/nuget/v/djsleurink.Analyzers.MethodGroupAnalyzer?style=flat-square&label=MethodGroupAnalyzer)
+
 # Analyzer: Method groups used within iterators
 
 Analyzer that detects unnecesary memory allocation caused by the usage of method groups and provides possible solutions to fix this issue.
