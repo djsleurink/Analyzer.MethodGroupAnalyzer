@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -8,22 +8,23 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>MethodGroupRecreatesDelegate</PackageId>
+    <PackageId>djsleurink.Analyzers.MethodGroupAnalyzer</PackageId>
     <PackageVersion>1.0.0.0</PackageVersion>
-    <Authors>Dev</Authors>
-    <PackageLicenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</PackageLicenseUrl>
-    <PackageProjectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</PackageProjectUrl>
-    <PackageIconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</PackageIconUrl>
-    <RepositoryUrl>http://REPOSITORY_URL_HERE_OR_DELETE_THIS_LINE</RepositoryUrl>
+    <Authors>DJ Sleurink</Authors>
+    <PackageLicenseUrl>https://github.com/djsleurink/Analyzer.MethodGroupAnalyzer/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/djsleurink/Analyzer.MethodGroupAnalyzer/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/djsleurink/Analyzer.MethodGroupAnalyzer/</RepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Description>MethodGroupRecreatesDelegate</Description>
-    <PackageReleaseNotes>Summary of changes made in this release of the package.</PackageReleaseNotes>
+    <Description>Analyzer which analyzes if method groups are used within an iterator and therefore cause unnecesary memory allocation</Description>
+    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
     <Copyright>Copyright</Copyright>
     <PackageTags>MethodGroupRecreatesDelegate, analyzers</PackageTags>
     <DevelopmentDependency>true</DevelopmentDependency>
     <NoPackageAnalysis>true</NoPackageAnalysis>
 
     <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddAnalyzersToOutput</TargetsForTfmSpecificContentInPackage>
+
+    <Title>Method Group Memory Allocation analyzer</Title>
   </PropertyGroup>
 
   <ItemGroup>
